@@ -9,8 +9,6 @@ Currently, two official plugins are available:
 
 ## Setting up Node Server
 
-## Setting up Node Server
-
 Install NVM (Node Version Manager)
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
@@ -43,4 +41,3 @@ pm2 startup  # Run as superuser
 
 ```bash
 pm2 save # Savecurrent list of processes
-
