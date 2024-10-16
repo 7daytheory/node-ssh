@@ -7,6 +7,18 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
+## Required libraries
+
+<h3>TailwindCSS</h3>
+```bash 
+npm install tailwindcss postcss autoprefix
+
+<h3>Setting up Template/Layouts</h3>
+<p>To use Router, Routes, and Route you are required to install :</p>
+```bash
+npm install react-router-dom
+
+
 ## Setting up Node Server
 
 Install NVM (Node Version Manager)

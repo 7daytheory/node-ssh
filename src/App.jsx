@@ -1,16 +1,22 @@
-import Footer from './components/Footer'
-import Navigation from './components/Navigation'
+//Import layout
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import MainLayout from './layouts/MainLayout'
 
 function App() {
 
   return (
     <>
-      <div className="flex flex-col min-h-screen">
-        <main className="flex-grow">
-          <Navigation />
-        </main>
-        <Footer />
-      </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<MainLayout />}>
+          <Route index element={
+              <>
+                Content inside coming soon!
+              </>
+            } />
+          </Route>
+        </Routes>
+      </Router>
     </>
   )
 }
