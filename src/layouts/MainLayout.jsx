@@ -1,15 +1,17 @@
-import Footer from '../components/Footer';
-import Navigation from '../components/Navigation/Navigation';
 import { Outlet } from 'react-router-dom';
+import Footer from '../components/Footer';
+import Navigation from '../components/Navigation';
 
 const MainLayout = () => {
-  return (
-    <>
+    return (
+      <div className="flex flex-col min-h-screen">
         <Navigation />
-        <Outlet />
+        <div className="flex-grow">
+          <Outlet />
+        </div>
         <Footer />
-    </>
-  )
-}
+      </div>
+    );
+  }
 
 export default MainLayout
