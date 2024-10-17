@@ -11,7 +11,9 @@ function App() {
           <Route path="/" element={<MainLayout />}>
           <Route index element={
               <>
-                Content inside coming soon!
+                <div className="flex items-center justify-center min-h-screen">
+                  <p className="text-center">Content received from Node Server Coming Soon!</p>
+                </div>
               </>
             } />
           </Route>
